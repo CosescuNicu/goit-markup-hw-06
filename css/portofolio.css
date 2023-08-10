@@ -341,23 +341,27 @@ a:hover {
   position: absolute;
   width: 1600px;
   height: 251px;
-  top: 1628px;
+  flex-shrink: 0;
   background: #2f303a;
+  top: 1628px;
   bottom: 0;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.adress-link-footer {
+.footer-lft-item {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-shrink: 0;
 }
+
 .logo-footer {
-  margin-left: 215px;
-  margin-top: 60px;
-  margin-right: 1240px;
+  display: inline-flex;
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 2157px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -366,22 +370,12 @@ a:hover {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.adress {
+.footer-adress {
   display: inline-flex;
-  width: 231px;
-  height: 72px;
-  flex-shrink: 0;
+  flex-direction: column;
+  row-gap: 12px;
 }
 .footer-local-adress {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  position: absolute;
-  width: 231px;
-  height: 72px;
-  top: 119px;
-  left: 215px;
-  right: 1154px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -401,16 +395,14 @@ a:hover {
 }
 
 .footer-social-link {
-  position: absolute;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  top: 75px;
-  left: 516px;
   width: 206px;
   height: 80px;
+  flex-shrink: 0;
 }
-.footer-title {
+.footer-social-link-title {
   margin: 0;
   color: #fff;
   font-family: Roboto;
@@ -447,6 +439,76 @@ a:hover {
 .icon-footer:hover,
 .icon-footer:focus {
   background-color: #2196f3;
-  transition: 0.6s ease;
+  transition-delay: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.action-subscribe {
+  display: flex;
+  width: 570px;
+  height: 86px;
+  flex-shrink: 0;
+}
+
+.footer-submit-title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+}
+input[type="text"] {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-subscribe {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+  cursor: text;
+}
+
+.submit-btn {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  cursor: pointer;
+}
+
+.icon-send {
+  position: absolute;
+  top: 13px;
+  left: 148px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  z-index: 1;
 }

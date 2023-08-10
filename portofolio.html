@@ -286,25 +286,27 @@
     <!--footer-->
 
     <footer class="container global-footer">
-      <a href="link-address"
-        ><img
-          class="logo-footer"
-          src="/images/webstudiologo.svg"
-          alt="webstudiologo"
-      /></a>
-      <address>
-        <ul class="footer-local-adress">
-          <li class="local-adress">695 Park Ave, NY 10065, USA</li>
-          <li>
-            <a class="mail-local-adress" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="local-adress">+1 212-772-4150</li>
-        </ul>
-      </address>
+      <div class="footer-lft-item">
+        <a href="link-address"
+          ><img
+            class="logo-footer"
+            src="./images/webstudiologo.svg"
+            alt="webstudiologo"
+        /></a>
+        <address class="footer-local-adress">
+          <ul class="footer-adress">
+            <li>695 Park Ave, NY 10065, USA</li>
+            <li>
+              <a class="mail-local-adress" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>+1 212-772-4150</li>
+          </ul>
+        </address>
+      </div>
       <div class="footer-social-link">
-        <p class="footer-title">Find us on</p>
+        <p class="footer-social-link-title">Find us on</p>
         <div class="social-icon-footer">
           <div class="icon-footer">
             <a href="https://www.instagram.com/" aria-label="Instagram"> </a>
@@ -331,6 +333,24 @@
             </svg>
           </div>
         </div>
+      </div>
+      <div class="action-subscribe">
+        <form action="subscribe">
+          <h2 class="footer-submit-title">Subscribe to the newsletter</h2>
+          <input
+            class="mail-subscribe"
+            type="text"
+            placeholder="Email"
+            name="mail"
+            required
+          />
+          <button class="submit-btn" type="submit">
+            Subscribe
+            <svg class="icon-send">
+              <use href="./icons/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
