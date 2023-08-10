@@ -869,6 +869,9 @@ input[type="text"] {
   transition: visibility 0s 250ms, opacity 1s linear;
 }
 .close-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   cursor: pointer;
   position: absolute;
   width: 30px;
@@ -876,20 +879,14 @@ input[type="text"] {
   top: 8px;
   flex-shrink: 0;
   right: 8px;
-  padding: 6px 6px;
+  padding: 3px 3px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #fff;
+  color: #000000;
+  font-size: 24px;
 }
 .close-btn:hover {
-  fill: #2196f3;
+  color: #2196f3;
   background: #f5f4fa;
-}
-.close-icon {
-  align-self: center;
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  stroke-width: 1px;
-  stroke: rgba(0, 0, 0, 0.1);
 }
