@@ -34,13 +34,13 @@
 
       <nav>
         <ul class="header-nav">
-          <li class="nav-first-item underline">
-            <a href="./index.html" class="active">Studio</a>
+          <li class="nav-first-item">
+            <a href="./index.html" class="active underline">Studio</a>
           </li>
-          <li class="nav-second-item underline">
+          <li class="nav-second-item">
             <a href="./portofolio.html" class="visited">Portofolio</a>
           </li>
-          <li class="nav-third-item underline">
+          <li class="nav-third-item">
             <a href="Contacts" class="visited">Contacts</a>
           </li>
         </ul>
@@ -342,25 +342,27 @@
     <!--footer-->
 
     <footer class="container global-footer">
-      <a href="link-address"
-        ><img
-          class="logo-footer"
-          src="./images/webstudiologo.svg"
-          alt="webstudiologo"
-      /></a>
-      <address>
-        <ul class="footer-local-adress">
-          <li class="local-adress">695 Park Ave, NY 10065, USA</li>
-          <li>
-            <a class="mail-local-adress" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="local-adress">+1 212-772-4150</li>
-        </ul>
-      </address>
+      <div class="footer-lft-item">
+        <a href="link-address"
+          ><img
+            class="logo-footer"
+            src="./images/webstudiologo.svg"
+            alt="webstudiologo"
+        /></a>
+        <address class="footer-local-adress">
+          <ul class="footer-adress">
+            <li>695 Park Ave, NY 10065, USA</li>
+            <li>
+              <a class="mail-local-adress" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>+1 212-772-4150</li>
+          </ul>
+        </address>
+      </div>
       <div class="footer-social-link">
-        <p class="footer-title">Find us on</p>
+        <p class="footer-social-link-title">Find us on</p>
         <div class="social-icon-footer">
           <div class="icon-footer">
             <a href="https://www.instagram.com/" aria-label="Instagram"> </a>
@@ -387,6 +389,13 @@
             </svg>
           </div>
         </div>
+      </div>
+      <div class="action-subscribe">
+        <form action="subscribe">
+          <h2 class="footer-submit-title">Subscribe to the newsletter</h2>
+          <input type="text" placeholder="Email" name="mail" required />
+          <button class="submit-btn" type="submit">Subscribe</button>
+        </form>
       </div>
     </footer>
 
