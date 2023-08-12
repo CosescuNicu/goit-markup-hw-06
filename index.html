@@ -414,7 +414,7 @@
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-btn is-open" data-modal-close>&times</button>
+        <button class="close-btn is-open" data-modal-close>&times;</button>
         <h2 class="modal-content-title">
           Leave your information and we'll call you back
         </h2>
@@ -422,17 +422,23 @@
           <div class="form-group">
             <label for="name">Name</label>
             <input class="form-control" type="text" id="name" />
-            <svg class="icon-phone">
-              <use href="/icons/symbol-defs.svg#icon-phone"></use>
+            <svg class="modal-icon icon-person">
+              <use href="./icons/symboll-defs.svg#icon-person"></use>
             </svg>
           </div>
           <div class="form-group">
             <label for="phone">Telephone</label>
             <input class="form-control" type="tel" id="phone" />
+            <svg class="modal-icon icon-phone">
+              <use href="./icons/symboll-defs.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
             <input class="form-control" type="email" id="email" />
+            <svg class="modal-icon icon-email">
+              <use href="./icons/symboll-defs.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="text-area">
             <label for="comments">Comments</label>
@@ -442,21 +448,21 @@
               name="comments"
               rows="8"
               cols="50"
-              placeholder="Enter the text"
+              placeholder="Enter the text...."
             >
             </textarea>
           </div>
         </form>
         <div class="checkbox">
           <label>
-            <input class="box" type="checkbox" />
-            <p class="terms-condition">
+            <input type="checkbox" />
+            <div class="terms-condition">
               I agree with the letter and accept the
               <span class="terms">Terms and Conditions</span>
-            </p></label
+            </div></label
           >
         </div>
-        <button type="submit" class="btn-default">Send</button>
+        <button type="submit" value="Send" class="btn-default">Send</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

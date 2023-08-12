@@ -930,16 +930,26 @@ a:hover {
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 30px;
 }
-.icon-phone {
-  position: absolute;
-  display: inline-block;
+.form-control:hover,
+.textarea-form-control:hover {
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+}
+.form-group:hover .modal-icon {
+  fill: #2196f3;
 }
 .text-area {
   display: flex;
@@ -957,46 +967,67 @@ a:hover {
 }
 
 .textarea-form-control {
-  width: 448px;
-  height: 120px;
+  width: 416px;
+  height: 96px;
+  flex-shrink: 0;
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
+  color: rgba(117, 117, 117, 0.5);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
 }
+
 .checkbox {
   position: relative;
   display: flex;
-  justify-content: center;
-}
-
-.box {
-  position: absolute;
-  top: 35%;
-  left: 10px;
-  width: 16px;
-  height: 15px;
+  justify-content: flex-end;
+  width: 420px;
+  height: 24px;
   flex-shrink: 0;
 }
-.box:before {
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+input[type="checkbox"]:before {
   content: "";
   display: block;
   position: absolute;
   width: 16px;
-  height: 16px;
+  height: 15px;
   top: 0;
   left: 0;
-  border: 2px solid #555555;
-  border-radius: 3px;
-  background-color: white;
+  border: 2px solid #000000;
+  background-color: #e9e9e9;
 }
-
-.box:checked:after {
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  border: #1e80ef;
+  background-color: #1e80ef;
+}
+input[type="checkbox"]:checked:after {
   content: "";
   display: block;
   width: 5px;
   height: 10px;
-  border: solid black;
+  border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -1032,6 +1063,7 @@ a:hover {
 }
 .btn-default {
   position: absolute;
+  top: 491px;
   left: 164px;
   width: 200px;
   height: 50px;
@@ -1039,7 +1071,7 @@ a:hover {
   border: none;
   border-radius: 4px;
   background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
   color: #fff;
   text-align: center;
   font-family: Roboto;
@@ -1051,6 +1083,17 @@ a:hover {
   cursor: pointer;
 }
 .btn-default:hover {
-  transition: 0.5s ease;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
